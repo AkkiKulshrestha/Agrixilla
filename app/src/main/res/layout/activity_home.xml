@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ms_white"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minHeight="30sp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:background="@drawable/top" />
+
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="50sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_hi_res_512"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:id="@+id/EdtUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:background="@drawable/form_bg_edittext_bg"
+            android:drawableStart="@drawable/icons_user"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/white"
+            android:gravity="center|start"
+            android:hint="UserId *"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="10"
+            android:minHeight="60sp"
+            android:paddingStart="10sp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            app:passwordToggleTint="@color/white"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/edt_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20sp"
+                android:background="@drawable/form_bg_edittext_bg"
+                android:drawableStart="@drawable/icons_lock"
+                android:drawableEnd="@android:drawable/ic_lock_silent_mode"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/white"
+                android:gravity="center|start"
+                android:hint="Password *"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:minHeight="60sp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="60sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginEnd="60sp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/cw_shadow_black"
+            android:gravity="center"
+            android:minHeight="50sp"
+            android:padding="10sp"
+            android:text="LOGIN"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/Tv_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="NEW USER ? REGISTER NOW"
+            android:textColor="@color/wetland_logo_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

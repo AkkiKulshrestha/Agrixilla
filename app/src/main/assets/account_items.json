@@ -1,0 +1,9 @@
+{
+  "acc_items": [
+    {"item": "Manage Profile"},
+    {"item": "Account Statement"},
+    {"item": "Billing"},
+    {"item": "Payments"},
+    {"item": "Credit Notes"}
+  ]
+}

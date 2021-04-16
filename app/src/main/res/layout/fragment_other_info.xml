@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/form_background_color"
+    tools:context=".investorRegistration.OtherInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+
+
+
+        <EditText
+            android:id="@+id/Edt_GstInNo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10sp"
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/btn_color_white"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:text=""
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:maxLength="12"
+            android:hint="GST Number *"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            />
+
+        <EditText
+            android:id="@+id/Edt_PesticidesLicenseNo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15sp"
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/btn_color_white"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:text=""
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:hint="Pesticides License No"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+             />
+
+        <EditText
+            android:id="@+id/edt_Email_Addresss"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15sp"
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            android:background="@drawable/btn_color_white"
+            android:hint="Email"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15sp"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/edt_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingStart="10dp"
+                android:textSize="14sp"
+                android:minHeight="55sp"
+                android:background="@drawable/btn_color_white"
+                android:drawableEnd="@android:drawable/ic_lock_silent_mode"
+                android:hint="Password *"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:maxLength="18" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etConfirmPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15sp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/edt_Confirm_Password"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+
+                android:paddingStart="10dp"
+                android:textSize="14sp"
+                android:background="@drawable/btn_color_white"
+                android:drawableEnd="@android:drawable/ic_lock_silent_mode"
+                android:hint="Re-Enter Password *"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                 />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/BtnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:background="@drawable/cw_shadow_bg"
+            android:text="Done"
+            android:minWidth="100sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/primary_green"
+
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="10sp"
+            android:padding="10sp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

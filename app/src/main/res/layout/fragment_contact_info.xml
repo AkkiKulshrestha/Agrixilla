@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color"
+    android:fitsSystemWindows="true"
+    tools:context=".investorRegistration.ContactInfoFragment">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Communication Address"
+            android:layout_margin="20sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+
+
+
+
+        <EditText
+            android:id="@+id/Edt_Address1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Address1 *"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5sp"
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            android:maxLength="50"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:background="@drawable/btn_color_white"
+            />
+
+        <EditText
+            android:id="@+id/Edt_Address2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Address2 *"
+            android:textColorHint="@color/grey"
+
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="15dp"
+            android:maxLength="50"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:background="@drawable/btn_color_white"
+            android:paddingStart="10dp"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Edt_Address3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textColorHint="@color/grey"
+
+            android:hint="Address3 "
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="15dp"
+            android:maxLength="50"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:background="@drawable/btn_color_white"
+            android:paddingStart="10dp"
+            android:textSize="14sp"/>
+
+
+
+        <EditText
+            android:id="@+id/Edt_Town"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Town"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="15dp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:background="@drawable/btn_color_white"
+            android:paddingStart="10dp"
+            android:textSize="14sp"/>
+
+
+        <EditText
+            android:id="@+id/Edt_Territory"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Territory"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="15dp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:background="@drawable/btn_color_white"
+            android:paddingStart="10dp"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Edt_Region"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Region"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="15dp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:background="@drawable/btn_color_white"
+            android:paddingStart="10dp"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Edt_AddressPincode"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Pincode *"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="15dp"
+            android:maxLength="6"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:background="@drawable/btn_color_white"
+            android:paddingStart="10dp"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Edt_City"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="City *"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="15dp"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:background="@drawable/btn_color_white"
+            android:paddingStart="10dp"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/Edt_State"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="State *"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:background="@drawable/btn_color_white"
+            android:paddingStart="10dp"
+            android:textSize="14sp"/>
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

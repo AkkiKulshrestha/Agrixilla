@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_myprofile"
+            android:icon="@drawable/ic_myprofile"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/nav_mydashboard"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="My Dashboard" />
+
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/ic_chage_password"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_rateus"
+            android:icon="@drawable/ic_rating"
+            android:title="Rate Us" />
+    </group>
+
+</menu>

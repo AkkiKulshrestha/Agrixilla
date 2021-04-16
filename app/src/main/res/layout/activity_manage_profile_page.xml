@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg_color"
+    android:orientation="vertical">
+
+   <include layout="@layout/toolback_with_back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_bg_color"
+
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel_product_img"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:background="@drawable/shop_bg"
+                android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_above="@+id/shop_label"
+                    android:src="@drawable/page_nameleaf"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/shop_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:textAllCaps="true"
+                    android:text="YOUR DETAILS"
+                    android:textColor="@color/white"
+                    android:layout_above="@+id/tv_user_id_text"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tv_user_id_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentBottom="true"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="30sp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/edt_Agency_Name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10sp"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                android:background="@drawable/btn_color_white"
+                android:hint="Firm Name *"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+               />
+
+            <EditText
+                android:id="@+id/edt_Proprietor_Name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10sp"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                android:background="@drawable/btn_color_white"
+                android:hint="Proprietor/Director Name *"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                 />
+
+            <EditText
+                android:id="@+id/Edt_AlternateNo"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10sp"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                android:background="@drawable/btn_color_white"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:text=""
+                android:hint="Alternate No."
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                />
+
+
+            <EditText
+                android:id="@+id/edt_Email_Addresss"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10sp"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                android:background="@drawable/btn_color_white"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                 />
+
+            <EditText
+                android:id="@+id/Edt_Address1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10sp"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                android:hint="Address 1 *"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:background="@drawable/btn_color_white"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/Edt_Address2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10sp"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                android:hint="Address 2 *"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:background="@drawable/btn_color_white"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/Edt_Address3"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10sp"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                android:hint="Address 3 "
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:background="@drawable/btn_color_white"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/Edt_AddressPincode"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10sp"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                android:hint="Pincode *"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+
+                android:maxLength="6"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:background="@drawable/btn_color_white"
+                />
+
+            <EditText
+                android:id="@+id/Edt_City"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10sp"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                android:hint="City of Residence *"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:background="@drawable/btn_color_white"
+                android:padding="5dp"
+                />
+
+            <EditText
+                android:id="@+id/Edt_State"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10sp"
+                android:paddingStart="10dp"
+                android:textSize="12sp"
+                android:hint="State of Residence *"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:background="@drawable/btn_color_white"
+                />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="UPDATE DETAILS"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/primary_green"
+                android:background="@drawable/cw_shadow_bg"
+
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="10sp"
+                android:padding="10sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

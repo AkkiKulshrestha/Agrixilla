@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg_color"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_bag"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:background="@drawable/shop_bg"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/leaf"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_above="@+id/shop_label"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/page_nameleaf" />
+
+                <TextView
+                    android:id="@+id/shop_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="30dp"
+                    android:text="SHOP"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_parent_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_bag"
+                android:background="@color/grey_bg_color"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="visible" />
+
+            <com.stepstone.stepper.StepperLayout
+                android:id="@+id/stepperLayout_Products"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rel_bag"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:ms_activeStepColor="@color/primary_green"
+                app:ms_showBottomNavigation="false"
+                app:ms_showErrorState="false"
+                app:ms_showErrorStateEnabled="false"
+                app:ms_stepperType="tabs"
+                app:ms_tabNavigationEnabled="true" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+

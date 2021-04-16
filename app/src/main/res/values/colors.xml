@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryBlue">#27525e</color>
+    <color name="colorPrimaryDark">#227E42</color>
+    <color name="colorPrimary">#91C53B</color>
+    <color name="colorPrimaryLight">#ABE056</color>
+    <color name="colorPrimaryVeryLight">#C1F37A</color>
+    <color name="black">#000000</color>
+    <color name="grey">#ccc9c9</color>
+    <color name="white">#ffffff</color>
+    <color name="colorAccent">#000</color>
+    <color name="primary_light_blue">#6aacd9</color>
+    <color name="red_close">#fc1208</color>
+    <color name="pie_chart_blue">#3a4692</color>
+    <color name="bg_grey_light">#F4F4F4</color>
+
+    <color name="btn_color_yellow">#ffde73</color>
+    <color name="orange">#f7af50</color>
+
+    <color name="graph_color_blue">#535fab</color>
+    <color name="form_background_color">#F1F5F7</color>
+    <color name="primary_green">#91C53B</color>
+
+    <color name="browser_actions_divider_color">#1E000000</color>
+    <color name="transparent_green">#91a7e269</color>
+    <color name="grey_bg_color">#E4EBF0</color>
+    <color name="wetland_logo_color">#3c453e</color>
+
+
+</resources>

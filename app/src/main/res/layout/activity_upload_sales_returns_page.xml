@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolback_with_back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_bg_color"
+
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel_product_img"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:background="@drawable/shop_bg"
+                android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_above="@+id/shop_label"
+                    android:src="@drawable/page_nameleaf"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/shop_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:textAllCaps="true"
+                    android:text="UPLOAD SALES RETURNS"
+                    android:textColor="@color/white"
+                    android:layout_above="@+id/tv_user_id_text"
+                    android:textSize="24sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10sp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/upload_your_sales_returns_file"
+                    android:id="@+id/textView"
+                    android:textSize="14sp"
+                    android:textColor="@color/wetland_logo_color"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentTop="true"/>
+
+                <Button
+                    android:id="@+id/button_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cw_shadow_bg"
+                    android:text="Browse File"
+                    android:textColor="@color/primary_green"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/Tv_SelectedFileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:layout_below="@+id/button_choose"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="20dp"/>
+
+                <Button
+                    android:id="@+id/button_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cw_shadow_bg"
+                    android:text="upload"
+                    android:padding="10dp"
+                    android:textColor="@color/primary_green"
+                    android:layout_below="@+id/Tv_SelectedFileName"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_uploaded_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginBottom="5sp"
+                    android:layout_below="@+id/button_upload"
+                    android:layout_centerInParent="true"
+                    android:nestedScrollingEnabled="false">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No data Uploaded till Date"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/button_upload"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="20sp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

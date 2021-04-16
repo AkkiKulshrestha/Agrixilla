@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">AGRiXiLLA</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="every_new_release_is_better_than_the_last">Every new release is better than the last, so why lag behind. Upgrade now and enjoy the best version yet!</string>
+
+    <string name="txt_submit">Submit</string>
+    <string name="txt_reset">Reset</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="runtime_permissions_txt">Please enable ALL permissions from app settings.</string>
+    <string name="permission_rationale">Please grant location permission to start the service</string>
+    <string name="title_alert_no_intenet">No internet</string>
+    <string name="msg_alert_no_internet">Please make sure that you have active internet connection.</string>
+    <string name="btn_label_refresh">Refresh</string>
+
+    <string name="permission_denied_explanation">You have not granted location permission. So the service cannot be started.</string>
+    <string name="settings">settings</string>
+    <string name="upload_your_sales_returns_file">Please upload your Sales Returns File in following format only: Image format (.jpg,.jpeg,.png) or File (.pdf,.word,.xls,.doc)</string>
+    <string name="wetland_address">Corporate Office : 25, B Wing,  Shraddha Park, Adarsh Nagar, Panchwati  Nashik - 422003  factory address-  A-76, Additional MIDC Area,  Nandgaon Peth,Near Sawardi,  Nagpur Road, Amravati.  GSTIN/UIN: 27AABCW8035B1ZI  State Name : Maharashtra, Code : 27  E-Mail : wetlandchemicals@gmail.com</string>
+
+
+    <string-array name="spin_item_gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="spin_item_list_of_ledgers">
+        <item>Select Financial Year</item>
+        <item>FY 2016-2017</item>
+        <item>FY 2017-2018</item>
+        <item>FY 2018-2019</item>
+    </string-array>
+
+
+
+    <string-array name="spin_item_frequency">
+        <item>Select Frequency</item>
+        <item>Monthly</item>
+        <item>Quarterly</item>
+    </string-array>
+
+
+</resources>

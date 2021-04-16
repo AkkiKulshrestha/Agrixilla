@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:visibility="visible"
+            android:src="@drawable/web_hi_res_512"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:gravity="center"
+
+            android:text="Let's get register with us."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+
+
+        <EditText
+            android:id="@+id/edt_Pan_Card"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40sp"
+            android:background="@drawable/form_bg_edittext_bg"
+            android:hint="ENTER PAN NUMBER *"
+            android:imeOptions="actionDone"
+            android:padding="5dp"
+            android:paddingStart="10sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:inputType="textCapCharacters"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="17sp" />
+
+
+
+        <Button
+            android:id="@+id/BtnValidatePan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:background="@drawable/cw_button_shadow"
+            android:text="Validate PAN"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/primary_green"
+            android:minHeight="50sp"
+            android:minWidth="150sp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="10sp"
+            android:padding="10sp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
